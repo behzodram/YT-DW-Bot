@@ -1,0 +1,13 @@
+[Unit]
+Description=YT-DW-Bot Telegram Bot
+After=network.target
+
+[Service]
+Type=simple
+User=ubuntu
+WorkingDirectory=/home/ubuntu/behzod/github/YT-DW-Bot/app
+ExecStart=/home/ubuntu/behzod/github/YT-DW-Bot/venv/bin/python main.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
